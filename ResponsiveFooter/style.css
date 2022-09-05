@@ -1,0 +1,100 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+#footer{
+    position: relative;
+    display: block;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+#footer .column a{
+	text-decoration: none;
+	color:white;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+}
+#footer .column a:hover{
+	color: #E6D2AA;
+}
+
+#footer .column-title{
+	color: #F5EDDC;
+}
+
+
+@media only screen and (min-width:1200px){ /* XL */
+	#footer .column{
+        width:25%;
+		min-width:25%;
+		max-width:25%;
+	}
+}
+@media only screen and (min-width:992px) and (max-width:1199px){ /* L */
+	#footer .column{
+        width:25%;
+		min-width:25%;
+		max-width:25%;
+	}
+}
+@media only screen and (min-width:768px) and (max-width:991px){ /* M */
+	#footer .column{
+        width:50%;
+		min-width:50%;
+		max-width:50%;
+	}
+}
+@media only screen and (min-width:576px) and (max-width:767px){ /* S */
+	#footer .column{
+        width:50%;
+		min-width:50%;
+		max-width:50%;
+	}
+}
+@media only screen and (max-width:575px){ /* XS */
+	#footer .column{
+        width:100%;
+		min-width:100%;
+		max-width:100%;
+	}
+}
+
+/* Column Title borders*/
+@media only screen and (min-width:1200px){ /* XL */
+	#footer .column-title{
+		padding-bottom: 3px;
+		margin-right: 5px;
+		border-bottom: 1px solid red;
+	}
+}
+@media only screen and (min-width:992px) and (max-width:1199px){ /* L */
+	#footer .column-title{
+		border-bottom: 1px solid red;
+		margin-right: 5px;
+	}
+}
+@media only screen and (min-width:768px) and (max-width:991px){ /* M */
+	#footer .column-title{
+		border-bottom: 1px solid red;
+		margin-right: 5px;
+	}
+}
+@media only screen and (min-width:576px) and (max-width:767px){ /* S */
+	#footer .column-title{
+		border-bottom: 1px solid red;
+		margin-right: 5px;
+	}
+}
+@media only screen and (max-width:575px){ /* XS */
+	#footer .column-title{
+		border-bottom: 1px solid red;
+	}
+}
