@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="tr">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="index, follow, noarchive">
+    <meta name="revisit-after" content="7 Days">
+    <meta name="rating" content="general">
+    <meta name="copyright" content="Copyright &copy; Mustafa Esat Temel Tüm Hakları Saklıdır.">
+    <meta name="reply-to" content="esattemel130@gmail.com">
+    <meta name="author" content="Mustafa Esat Temel - esattemel130@gmail.com">
+    <meta name="designer" content="Mustafa Esat Temel">
+    <meta name="generator" content="Visual Studio Code"> 
+    <title>Contact Me</title>
+    <meta name="description" content="Mustafa Esat Temel kişisel web sitesi. Hakkında - İletişim.">
+    <meta name="keywords" content="Mustafa Esat Temel, Mustafa Esad Temel, Minecraft, Yazılım">
+
+     <!--Caching-->
+     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+     <meta http-equiv="Pragma" content="no-cache" />
+     <meta http-equiv="Expires" content="0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+    <link type="image/png" sizes="96x96" rel="icon" href="images/icons8-code-96.png">
+
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css?version=1.0">
+</head>
+<body class="position-relative">
+    
+    <header id="header">
+        <div class="header-container">
+            <nav class="navbar-items">
+                <i class="fa-solid fa-address-book"></i>
+                <ul>
+                    <li class="navbar-item"><a href="index.html">Home</a></li>
+                    <li class="navbar-item"><a href="#" class="active">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main id="contact-main" class="pb-2">
+    <div class="contact-container">
+        <div class="contact-form">
+            <h1 class="contact-title">Contact Me</h1>
+            <form id="contact" 
+            action="https://formspree.io/f/xdojoqdg"
+            method="POST" target="_blank">
+               <input required type="text" name="name" class="c-name contact-item" placeholder="Name">
+
+               <input required type="email" name="email"
+               class="c-email contact-item" placeholder="Email">
+
+               
+               <textarea required class="c-textarea contact-item" maxlength="500" placeholder="Text" name="content"></textarea><span id="info-remaining"></span>
+            
+
+               <input type="submit" class="c-button contact-item" value="Send" onclick="sendEmail()">
+            </form>
+
+        </div>
+    </div></main>
+
+    <footer id="footer" class="pt-2">
+        <div class="container-sm">
+          <div class="footer-area clearfix">
+            <div class="column w-25 float-start">
+              <div class="column-title">About Us</div>
+              <ul class="column-list list-unstyled ">
+                <li class="column-list-item ">
+                  <a href="#" class="textde">Who am I ?</a>
+                </li>
+                <li class="column-list-item">
+                  <a href="#">Contact with me via form</a>
+                </li>
+                <li class="column-list-item">
+                  <a href="mailto: esattemel130@gmail.com">Contact with me via mail</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column w-25 float-start">
+              <div class="column-title">Membership & Services</div>
+              <ul class="column-list list-unstyled">
+                <li class="column-list-item">
+                  <a href="#">Sign up</a>
+                </li>
+                <li class="column-list-item">
+                  <a href="#">Sign in</a>
+                </li>
+                <li class="column-list-item">
+                  <a href="#">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column w-25 float-start">
+              <div class="column-title">My Projects</div>
+              <ul class="column-list list-unstyled">
+                <li class="column-list-item">
+                  <a href="#">Added soon</a>
+                </li>
+                <li class="column-list-item">
+                  <a href="#">Added soon</a>
+                </li>
+                <li class="column-list-item">
+                  <a href="#">Added soon</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column w-25 float-start">
+              <div class="column-title">Follow Us</div>
+              <ul class="column-list list-unstyled">
+                <li class="column-list-item">
+                  <a href="https://twitter.com/M_EsatTemel"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="column-list-item">
+                  <a href="https://www.youtube.com/channel/UC7ZZqzKuNxhvFG2iYx-KEGw"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li class="column-list-item">
+                  <a href="https://discord.gg/aWEbfaZDC7"><i class="fa-brands fa-discord"></i></a>
+                </li>
+                <li class="column-list-item">
+                  <a href="https://github.com/MustafaEsatTemel"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li class="column-list-item">
+                  <a href="https://www.linkedin.com/in/mustafa-esat-temel-b7a94b217/"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+<script type="text/javascript" language="javascript" src="../js/mail.js"></script>
+<script>
+    //Textarea Remaining
+var max = 500;
+var textarea = document.querySelector('textarea');
+var info = document.querySelector('#info-remaining');
+
+info.textContent = max - textarea.value.length;
+
+textarea.addEventListener('input', function() {
+  info.textContent = max - this.value.length;
+})
+</script>
+</body>
+</html>
